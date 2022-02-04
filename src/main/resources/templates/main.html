@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <title>CarRent</title>
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="main"><img src="img/logo.png"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="main">Home</a></li>
+                <li><a href="carList">Car List</a></li>
+                <li><a th:if="${logged == true}"href="info">Your cars(Rent)</a></li>
+                <li><a th:if="${logged == true}"href="delete">Delete</a></li>
+                <li><a th:if="${logged == true}"href="logout">Logout</a></li>
+                <li><a th:if="${logged == false}"href="login">Login</a></li>
+                <li><a th:if="${logged == false}"href="register">Register</a></li>
+            </ul>
+        </div>
+        <div class="text-box">
+            <h1>CarRent PAGE</h1>
+            <p>
+               Funkcje strony:<br>
+                -Logowanie<br>
+                -Rejestracja<br>
+                -Sprawdzenie list aut do wypozyczenia<br>
+                -Sprawdzenie list aut wypozyczonych<br>
+                -Mozliwość usuwania aut ( tylko dla kont które maja userType= ADMIN)<br>
+                -Testy<br>
+            </p>
+        </div>
+    </nav>
+</section>
+</body>
+</html>

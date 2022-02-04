@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-position: center;
+    background-size: cover ;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style:  none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration:  none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.content-table thead tr{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:nth-of-type(odd){
+    background-color: #ffffff;
+}
+
+.text-box{
+    width: 90%;
+    color: #000000;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.but form{
+    text-align: center;
+}
+content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#login-form {
+    width: 700px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login-form input[type="text"], #login-form input[type="password"] {
+    width: 80%;
+    margin: 5px 0;
+    font-size: 26px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: border 0.5s;
+}
+
+#login-form input[type="text"]:hover, #login-form input[type="password"]:hover {
+    border: 1px solid red;
+}
+
+#login-form input[type="submit"] {
+    background: white;
+    border: 1px solid black;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 26px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: border, color 0.5s;
+    transition: background 0.5s;
+}
+
+#login-form input[type="submit"]:hover {
+    background: red;
+    border: 1px solid red;
+    color: white;
+}
