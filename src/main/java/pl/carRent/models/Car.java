@@ -25,6 +25,10 @@ public class Car {
         this.pricePerDay = pricePerDay;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public void setBrand(String brand) {
         this.brand = brand;
     }

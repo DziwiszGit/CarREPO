@@ -33,6 +33,10 @@ public class RentCar {
         this.pricePerDay = pricePerDay;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }

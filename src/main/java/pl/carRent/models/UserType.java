@@ -6,4 +6,5 @@ public enum UserType {
     ADMIN("ADMIN");
     String type;
     UserType(String type){this.type=type;}
+
 }
